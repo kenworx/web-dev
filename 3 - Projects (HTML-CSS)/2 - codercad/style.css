@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: FBFBFB;
+    color: #363636;
+    margin-bottom: 400px;
+}
+
+/* table collapse */
+table {
+    border-collapse: collapse;
+}
+
+/* table header */
+th {
+    padding: 5px;
+}
+
+th:nth-child(1) {
+    border-right: 1px solid #dcdcdc;
+}
+
+/* table data */
+td {
+    padding: 5px;
+}
+
+td:nth-child(1) {
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+
+td:nth-child(2) {
+    border-top: 1px solid #dcdcdc;
+}
+
