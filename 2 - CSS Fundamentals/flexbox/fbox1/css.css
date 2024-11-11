@@ -1,4 +1,14 @@
+    /* outline guide */
     /* outline: 2px solid lime; */
+
+    /* TODO */
+    /* min-height */
+
+    /* .container/.wrapper 
+    max-width 
+    margin-inline <auto>
+    
+    */
 
     * {
         box-sizing: border-box;
@@ -21,6 +31,7 @@
         padding: 0 30px;
     }
 
+    /* NAVBAR */
     .navbar {
         background-color: #CBDCEB;
     }
@@ -29,7 +40,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         font-size: x-large;
         height: 50px;
     }
@@ -37,8 +48,6 @@
     .navbar ul {
         display: flex;
         flex-shrink: 0;
-        /* outline: 1px solid lime;
-    background-color: aliceblue; */
         justify-content: space-around;
         list-style: none;
         width: 30%;
@@ -64,25 +73,29 @@
     /* MAIN */
     .main {
         margin: 50px;
+        color: #F3F3E0;
     }
 
     .main .container {
         display: flex;
+        /* flex-wrap: wrap; */
         padding: 2 5px;
+        height: 40vh;
     }
 
     .main .container section {
+        background-color: #133E87;
+        border-radius: 5px;
         padding: 15px;
-        outline: 2px solid lime;
         margin-right: 20px;
-        min-width: 58%;
-        width: max-content;
-
+        /* max-width: 100%; */
     }
 
     .main .container aside {
+        border-radius: 5px;
+        /* max-width: 40%; */
+        background-color: #133E87;
         padding: 15px;
-        outline: 2px solid lime;
     }
 
     .post-1 {
@@ -93,46 +106,104 @@
         padding: 5px;
     }
 
+    /* MAIN - 2 */
+    .main-2 ul {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+        justify-content: space-between;
+    }
+
+    .main-2 ul li {
+        background-color: #133E87;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        color: #F3F3E0;
+        padding: 15px;
+        list-style: none;
+        font-size: large;
+        border-radius: 25px;
+        font-weight: bold;
+        width: 300px;
+    }
+
     /* FOOTER */
-    /* FOOTER COLOR */
+    .footer {
+        margin-top: 50px;
+        background-color: #133E87;
+        color: #f0f0f0;
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
 
     /* RES */
-    @media(max-width: 700px) {
-        .navbar .container {
-            flex-direction: column;
-        }
+    @media(max-width: 768) {
 
-        .main .container {
-            flex-direction: column;
+        /* MAIN RES */
+        .main {
+            margin-bottom: 20vh;
         }
 
         .main .container section {
-            max-width: fit-content;
-            margin-right: 0;
+            height: 55vh;
         }
 
         .main .container aside {
-            margin-top: 50px;
-            max-width: fit-content;
+            height: 55vh;
         }
-    }
 
-    @media(max-width: 800px) {
+        /* MAIN - 2 RES */
+        .main-2 {
+            flex-direction: column;
+            height: 90vh;
+        }
+
+        .main-2 ul {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 100%;
+            gap: 1em;
+        }
+
+        .main-2 ul li {
+            width: 400px;
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: auto;
+        }
+
+    }
+/* 
+    @media(max-width: 800px) { */
+
+        /* NAVBAR */
         /* .navbar .container {
             flex-direction: column;
         } */
 
+        /* MAIN - 2 RES */
+        /* .main {
+            margin-bottom: 13vh;
+        }
+
         .main .container {
             flex-direction: column;
         }
 
         .main .container section {
-            max-width: fit-content;
             margin-right: 0;
-        }
+            margin-bottom: 20px;
+        } */
 
-        .main .container aside {
-            margin-top: 50px;
-            max-width: fit-content;
+        /* MAIN - 2 RES */
+        /* .main-2 {
+            height: 75vh;
         }
-    }
+    } */
