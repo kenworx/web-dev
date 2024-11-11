@@ -1,0 +1,87 @@
+/* FLEXBOX */
+/* https://www.youtube.com/watch?v=phWxA89Dy94 */
+/* https://flexboxfroggy.com/ */
+
+
+/* display: flex; */
+/* flex-direction: row; */
+
+/* aligns item on the MAIN AXIS */
+/* justify-content: end; */
+/* aligns item on the CROSS AXIS */
+/* align-items: baseline; */
+
+/* flex wrap avoids divs from crushing each other when there is too many of them */
+/* flex-wrap: wrap; */
+/* align-content ONLY WORKS when "flex-wrap: wrap;" */
+/* align-content: flex-end; */
+
+/* bonus: gap property */
+/* gap: 1em; */
+
+/* flex-grow: 1; */
+
+/* fast shrink of BOXES lol */
+/* flex-shrink: 1; */
+/* this box refuses to shrink */
+/* flex: 0; */
+/* flex-basis: 300px; */
+
+/* flex shorthand (mostly used)*/
+/* flex: 1; */
+
+/* for items/children of container */
+/* align-self: center; */
+
+/* organize boxes individually */
+/* use only when needed */
+/* order: -1; */
+
+
+/* flex-direction + flex-wrap = flex-flow */
+
+
+
+/* 
+
+- "justify-" is for the primary axis.
+
+- "align-" for the secondary one
+
+- "-content" is for grid tracks / rows in flex-wrap containers.
+
+- "-items is for individual children (within the row / grid cell) 
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: #254de4;
+    color: #fff;
+    margin: 10px;
+}
+
+.item:nth-of-type(1) {}
+
+.item:nth-of-type(2) {}
+
+.item:nth-of-type(3) {}

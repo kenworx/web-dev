@@ -1,0 +1,299 @@
+/* THIS IS A COMMENT IN CSS */
+
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+
+    /* long ahh declaration */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    /* same as above but */
+    /* short hand */
+    font: normal 20px Arial, Helvetica, sans-serif;
+
+    /* space between the lines */
+    /* 
+    like:
+    sentence
+    sentence^ 
+    */
+    line-height: 1.6em;
+    /* using em (unit) for lineheight */
+
+    /* 
+    CHATGPT about CLASS v ID:
+
+    In CSS, class and id are both ways to select and style HTML elements, but they have different uses:
+
+    Class: A class is a reusable style that can be applied to multiple elements.
+    You define it with a dot (.) in CSS. For example, .button can style all buttons the same way.
+    Id: An id is a unique identifier for a single element. You define it with a hashtag (#) in CSS.
+    For example, #header can only be used for one specific element, like a header.
+
+    In summary, use classes for groups of elements and ids for single, unique elements.
+    */
+
+    /* 
+    MY TLDR:
+        CLASS -> . -> Reusable for multiple elements.
+        ID    -> # -> For one specific element.
+    */
+}
+
+
+/* LINKS */
+/* applying global style on any link on the page */
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+
+/* all links hover style */
+a:hover {
+    color: red;
+}
+
+/* active state (when clicked turns to <color>) */
+a:visited {
+    color: black;
+}
+
+/* BUTTON STYLE */
+.button {
+    /*default button style*/
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    /*default button when hovered*/
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+/* clear */
+.clr {
+    clear: both;
+}
+
+
+
+
+/* container */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* box 1 styles */
+.box-1 {
+    background-color: #555555;
+    color: #fff;
+
+    /* BORDERS */
+    border-top: 5px green solid;
+    border-right: 5px green solid;
+    border-bottom: 5px green solid;
+    border-left: 5px green solid;
+
+    /* shorthand border (all sides) */
+    border: 5px green solid;
+
+    /* borders have styles (eg dotted double dashed */
+    border-top-style: dashed;
+
+
+    /* PADDINGS */
+
+    /* applying padding the 'long way' */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    /* same as above */
+    /* applying padding on all sides */
+    padding: 20px;
+
+    /* MARGINS */
+    /* applies margin top with 20px */
+    margin-top: 20px;
+    /* applies margin top and bottom + 0 on right and left */
+    margin: 20px 0;
+
+}
+
+/* selecting h1 inside the 'box-1' div */
+.box-1 h1 {
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    /*space between letters*/
+    word-spacing: 1em;
+    /*space between words*/
+}
+
+/* box 2 styles */
+.box-2 {
+    border: 5px dotted black;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* categories */
+/* div.categories style */
+.categories {
+    border: 5px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* selecting h2 inside categories */
+.categories h2 {
+    text-align: center;
+}
+
+/* styling ul of categories */
+.categories ul {
+    padding: 0;
+    /* ul have auto padding. we add 'padding: 0' to remove that */
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+/* targeting categories li */
+.categories li {
+    border: dashed 1px #333;
+    padding: 5px;
+    margin: 5px 0;
+    list-style-image: url('images/check.png');
+}
+
+/* FORM */
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"],
+input[type="email"],
+.my-form textarea {
+    /*attribute selector example: [type="text"]*/
+    /*targets elements with a specific attribute e.g. [type="text"]*/
+    padding: 10px;
+    width: 100%;
+}
+
+/* block */
+/* use flexbox  */
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* MAIN BLOCK */
+#main-block {
+    float: left;
+    width: 70%;
+    background-color: #333;
+    border-right: 5px solid #555555;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* SIDEBAR */
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+/* CSS POSITION */
+/* 
+    5 different position values:
+    -static
+    -relative
+    -fixed
+    -absolute
+    -sticky
+*/
+
+/* positioning our box */
+/* PBOX */
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    /* using image as background */
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.p-box h1 {
+    color: red;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    color: red;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+
+/* fixed */
+.fix-me {
+    position: fixed;
+    top: 10px;
+}
+
+
+/* performing pseudoclasses using UL */
+.my-list li:first-child{
+    background-color: gray;
+}
+.my-list li:last-child{
+    background-color: gray;
+}
+
+/* using nth-child() */
+.my-list li:nth-child(3) {
+    background-color: green;
+}
+
+/* even nth-child */
+.my-list li:nth-child(even) {
+    background-color: gold;
+}
