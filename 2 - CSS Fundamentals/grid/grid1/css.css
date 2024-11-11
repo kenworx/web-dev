@@ -1,0 +1,62 @@
+.container {
+    /* we can use % e.g. grid-tamplte-columns: 20% 20% 20% 20% 20%; */
+    background-color: #9EDF9C;
+    display: grid;
+    outline: 1px solid lime;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: 3fr 1fr;
+    /* fr unit */
+    /* grid-tamplte-rows: 100px 100px; */
+    /* grid-template-columns: 1fr 1fr 1fr */
+
+    /* grid-template-columns:100px minmax(100px 3fr) 1fr; minmax-stops shrinking at 100px */
+
+    /* grid-template-rows: repeat(2, 100px); */
+    /* grid-gap: 1em; creates gap between */
+
+}
+
+.item-1 {
+
+    outline: 1px solid lime;
+    background-color: #526E48;
+    height: 100%;
+    width: 100%;
+
+
+    /* grid */
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+
+    /* grid shorthand */
+    /* grid-row: 2/4;
+    grid-column: 1/4; */
+
+    /* grid shorthand 2 */
+    /* grid-area: 1 / 2 / 4 / 4; */
+
+}
+
+.item-2 {
+    outline: 1px solid lime;
+    background-color: #68855e;
+    height: 100%;
+    width: 100%;
+
+    /* grid */
+}
+
+.item-3 {
+    outline: 1px solid lime;
+    background-color: #77916e;
+    height: 100%;
+    width: 100%;
+
+    /* grid */
+
+}
+
+/* grid media query technique */
+/* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
