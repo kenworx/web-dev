@@ -1,0 +1,79 @@
+/* LIME GUIDE */
+/* outline: 1px solid lime; */
+
+/* Reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------ ------------ */
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  outline: 1px solid lime;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif; /* Example default font */
+}
+
+.container {
+  max-width: 70%;
+  outline: 1px solid lime;
+  margin: 0 auto;
+}
+/* ------------ ------------ */
+
+
+
+/* ------------MEDIA QUERIES------------ */
+/* For very small devices (e.g., small phones) */
+@media (max-width: 475px) {
+.container {
+  padding: 0 0.5rem; /* Slightly less padding on extra small screens */
+}
+}
+
+/* For small phones (portrait) */
+@media (max-width: 640px) {
+.container {
+  max-width: 475px;
+}
+}
+
+/* For mobile devices (portrait) */
+@media (max-width: 768px) {
+.container {
+  max-width: 640px;
+}
+}
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+.container {
+  max-width: 768px;
+}
+}
+
+/* For large tablets or small desktops */
+@media (max-width: 1280px) {
+.container {
+  max-width: 1024px;
+}
+}
+
+/* For large desktops or wide screens */
+@media (max-width: 1536px) {
+.container {
+  max-width: 1280px;
+}
+}
